@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">MyTemperatureApplication</string>
+    <string-array name="weekdays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednsday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+    </string-array>
+    <string name="sensor_available">Ambient temperature sensor unavailable</string>
+    <string name="degree">\u00B0</string>
+    <string name="celsius">C</string>
+    <string name="fahrenheit">F</string>
+    <string name="slash">/</string>
+</resources>
