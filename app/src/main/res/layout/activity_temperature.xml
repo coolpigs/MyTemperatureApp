@@ -13,10 +13,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AmbientTemperature"
         android:id="@+id/ambientTemperatureTextView"
         android:layout_gravity="center_horizontal"
-        android:textSize="24dp"/>
+        android:textSize="24sp"/>
 
     <ListView
         android:layout_width="wrap_content"
@@ -27,8 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="C/F"
         android:id="@+id/convertButton"
-        android:textSize="24dp"
+        android:textSize="24sp"
         android:layout_marginTop="20dp"/>
 </LinearLayout>

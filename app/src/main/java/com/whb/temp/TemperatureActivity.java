@@ -20,11 +20,11 @@ import java.util.List;
 import java.util.Random;
 
 public class TemperatureActivity extends Activity implements View.OnClickListener {
-    public static final boolean IS_DEBUG = false;//Macro for output debug information
-    public static final String TAG = "WHB_APP ";//output information tag
-    public static final int DAYS = 5;
-    public static final float MIN_RANDOM_C_TEMP = -50;//min temperature
-    public static final float MAX_RANDOM_C_TEMP = 50;//max temperature
+    private static final boolean IS_DEBUG = false;//Macro for output debug information
+    private static final String TAG = "WHB_APP ";//output information tag
+    private static final int DAYS = 5;
+    private static final float MIN_RANDOM_C_TEMP = -50;//min temperature
+    private static final float MAX_RANDOM_C_TEMP = 50;//max temperature
 
     private String DEGREE;// display unit
     private String CELSIUS;// display unit
@@ -253,7 +253,7 @@ public class TemperatureActivity extends Activity implements View.OnClickListene
         runOnUiThread(new Runnable() {
             @Override
             public void run() {
-                if (isCelsius == false) {
+                if (!isCelsius) {
                     convertButton.setText(DEGREE + FAHRENHEIT + SLASH + DEGREE + CELSIUS);
                 } else {
                     convertButton.setText(DEGREE + CELSIUS + SLASH + DEGREE + FAHRENHEIT);
